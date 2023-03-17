@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="flex md:block gap-2">
+    <div className="flex flex-row gap-2">
       <ul>
         <Link href="/">
           <li>home</li>

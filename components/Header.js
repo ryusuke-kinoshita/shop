@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function Header() {
+export default function Header({ children }) {
   return (
-    <div>
-      <h1>sotto l`albero</h1>
+    <div className="">
+      <h1>{children}</h1>
     </div>
   );
 }

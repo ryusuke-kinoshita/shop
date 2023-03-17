@@ -53,12 +53,14 @@ function Cart() {
     return (
       <div key={item.id}>
         <h3>{item.name}</h3>
-        <img src={item}>{}</img>
+
+        {/* ここに商品の画像を貼る*/}
+        {/* <img src={item}></img> */}
+
         <p>数量: {item.quantity}</p>
         <p>値段: ¥{item.price.toLocaleString()}</p>
         <button
           className="border-4 border-gray-400"
-          y
           onClick={() => incrementItemQuantity(index)}
         >
           +
