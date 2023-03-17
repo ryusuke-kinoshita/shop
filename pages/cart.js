@@ -53,10 +53,22 @@ function Cart() {
     return (
       <div key={item.id}>
         <h3>{item.name}</h3>
+        <img src={item}>{}</img>
         <p>数量: {item.quantity}</p>
         <p>値段: ¥{item.price.toLocaleString()}</p>
-        <button onClick={() => incrementItemQuantity(index)}>+</button>
-        <button onClick={() => decrementItemQuantity(index)}>-</button>
+        <button
+          className="border-4 border-gray-400"
+          y
+          onClick={() => incrementItemQuantity(index)}
+        >
+          +
+        </button>
+        <button
+          className="border-4 border-gray-400"
+          onClick={() => decrementItemQuantity(index)}
+        >
+          -
+        </button>
       </div>
     );
   };
